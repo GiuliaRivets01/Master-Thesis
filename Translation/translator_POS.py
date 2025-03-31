@@ -72,6 +72,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-# C4n4l3tt0St0cc0lm4)
-# W1ndm1llL31d3n)
