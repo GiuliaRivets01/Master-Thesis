@@ -1,0 +1,22 @@
+# configs/Dutch_translated.yaml
+
+dataset:
+  name: "Dutch_HSD"
+  language: "nl"
+  text_column: "translated_test_case"
+  label_column: "label_gold"
+  cols_to_drop: ["test_case"]
+  train_path: "data/Dutch/raw/HSD_nl_train_translated.csv"
+  val_path: "data/Dutch/raw/HSD_nl_val_translated.csv"
+  test_path: "data/Dutch/raw/HSD_nl_test_translated.csv"
+  output_path_train: "data/Dutch/cleaned/HSD_nl_train_translated_cleaned.csv"
+  output_path_val: "data/Dutch/cleaned/HSD_nl_val_translated_cleaned.csv"
+  output_path_test: "data/Dutch/cleaned/HSD_nl_test_translated_cleaned.csv"
+  original: False
+
+training:
+  batch_size: 32
+  learning_rate:   5.7956197451463476e-05
+  weight_decay:   0.011062693201908938
+  epochs: 4
+  logs_dir: outputs/logs/nl_translated/

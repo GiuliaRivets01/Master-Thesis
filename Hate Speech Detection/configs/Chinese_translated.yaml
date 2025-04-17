@@ -1,0 +1,22 @@
+# configs/Chinese_translated.yaml
+
+dataset:
+  name: "Chinese_HSD"
+  language: "ch"
+  text_column: "translated_TEXT"
+  label_column: "label"
+  cols_to_drop: ["split", "topic", "Unnamed: 0", "TEXT", "fine-grained-label"]
+  train_path: "data/Chinese/raw/HSD_ch_train_translated.csv"
+  val_path: "data/Chinese/raw/HSD_ch_val_translated.csv"
+  test_path: "data/Chinese/raw/HSD_ch_test_translated.csv"
+  output_path_train: "data/Chinese/cleaned/HSD_ch_train_translated_cleaned.csv"
+  output_path_val: "data/Chinese/cleaned/HSD_ch_val_translated_cleaned.csv"
+  output_path_test: "data/Chinese/cleaned/HSD_ch_test_translated_cleaned.csv"
+  original: False
+
+training:
+  batch_size: 16
+  learning_rate: 4.2335883374759986e-05
+  weight_decay: 0.018868066040347884
+  epochs: 6
+  logs_dir: outputs/logs/ch_translated/

@@ -1,0 +1,21 @@
+# configs/Bulgarian_original.yaml
+
+dataset:
+  name: "bulgarian_HSD"
+  language: "bg"
+  text_column: "text"
+  label_column: "Type"
+  cols_to_drop: ["Positivity"]
+  train_path: "data/Bulgarian/raw/HSD_bg_train.csv"
+  val_path: "data/Bulgarian/raw/HSD_bg_val.csv"
+  test_path: "data/Bulgarian/raw/HSD_bg_test.csv"
+  output_path_train: "data/Bulgarian/cleaned/HSD_bg_train_original_cleaned.csv"
+  output_path_val: "data/Bulgarian/cleaned/HSD_bg_val_original_cleaned.csv"
+  output_path_test: "data/Bulgarian/cleaned/HSD_bg_test_original_cleaned.csv"
+  original: True
+
+model:
+  base_model: "AIaLT-IICT/bert_bg_lit_web_base_uncased"
+
+training:
+  logs_dir: outputs/logs/bg_original/

@@ -1,0 +1,18 @@
+# configs/Bulgarian_translated.yaml
+
+dataset:
+  name: "bulgarian_HSD"
+  language: "bg"
+  text_column: "translated_text"
+  label_column: "Type"
+  cols_to_drop: ["text", "Positivity"]
+  train_path: "data/Bulgarian/raw/HSD_bg_train_translated.csv"
+  val_path: "data/Bulgarian/raw/HSD_bg_val_translated.csv"
+  test_path: "data/Bulgarian/raw/HSD_bg_test_translated.csv"
+  output_path_train: "data/Bulgarian/cleaned/HSD_bg_train_translated_cleaned.csv"
+  output_path_val: "data/Bulgarian/cleaned/HSD_bg_val_translated_cleaned.csv"
+  output_path_test: "data/Bulgarian/cleaned/HSD_bg_test_translated_cleaned.csv"
+  original: False
+
+training:
+  logs_dir: outputs/logs/bg_translated/

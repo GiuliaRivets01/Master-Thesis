@@ -1,0 +1,22 @@
+# configs/Italian_translated.yaml
+
+dataset:
+  name: "italian_HSD"
+  language: "it"
+  text_column: "translated_full_text"
+  label_column: "hs"
+  cols_to_drop: ["id", "stereotype", "full_text"]
+  train_path: "data/Italian/raw/HSD_it_train_translated.csv"
+  val_path: "data/Italian/raw/HSD_it_val_translated.csv"
+  test_path: "data/Italian/raw/HSD_it_test_translated.csv"
+  output_path_train: "data/Italian/cleaned/HSD_it_train_translated_cleaned.csv"
+  output_path_val: "data/Italian/cleaned/HSD_it_val_translated_cleaned.csv"
+  output_path_test: "data/Italian/cleaned/HSD_it_test_translated_cleaned.csv"
+  original: False
+
+training:
+  batch_size: 16
+  learning_rate: 1.7048008362426735e-06
+  weight_decay: 0.05327274468783867
+  epochs: 6
+  logs_dir: outputs/logs/it_translated/

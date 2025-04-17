@@ -1,0 +1,21 @@
+# configs/Chinese_original.yaml
+
+dataset:
+  name: "Chinese_HSD"
+  language: "ch"
+  text_column: "TEXT"
+  label_column: "label"
+  cols_to_drop: ["split", "topic"]
+  train_path: "data/Chinese/raw/HSD_ch_train_original.csv"
+  val_path: "data/Chinese/raw/HSD_ch_val_original.csv"
+  test_path: "data/Chinese/raw/HSD_ch_test_original.csv"
+  output_path_train: "data/Chinese/cleaned/HSD_ch_train_original_cleaned.csv"
+  output_path_val: "data/Chinese/cleaned/HSD_ch_val_original_cleaned.csv"
+  output_path_test: "data/Chinese/cleaned/HSD_ch_test_original_cleaned.csv"
+  original: True
+
+model:
+  base_model: "google-bert/bert-base-chinese"
+
+training:
+  logs_dir: outputs/logs/ch_original/

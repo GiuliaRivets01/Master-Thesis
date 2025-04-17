@@ -1,0 +1,21 @@
+# configs/Russian_original.yaml
+
+dataset:
+  name: "Russian_HSD"
+  language: "ru"
+  text_column: "text"
+  label_column: "hate_speech"
+  cols_to_drop: ["Unnamed: 0", "index", "sentiment", "translated_text"]
+  train_path: "data/Russian/raw/HSD_ru_train_translated.csv"
+  val_path: "data/Russian/raw/HSD_ru_val_translated.csv"
+  test_path: "data/Russian/raw/HSD_ru_test_translated.csv"
+  output_path_train: "data/Russian/cleaned/HSD_ru_train_original_cleaned.csv"
+  output_path_val: "data/Russian/cleaned/HSD_ru_val_original_cleaned.csv"
+  output_path_test: "data/Russian/cleaned/HSD_ru_test_original_cleaned.csv"
+  original: True
+
+model:
+  base_model: "deepvk/bert-base-uncased"
+
+training:
+  logs_dir: outputs/logs/ru_original/

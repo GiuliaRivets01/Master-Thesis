@@ -1,0 +1,25 @@
+# configs/Italian_original.yaml
+
+dataset:
+  name: "italian_HSD"
+  language: "it"
+  text_column: "full_text"
+  label_column: "hs"
+  cols_to_drop: ["id", "stereotype", "translated_full_text"]
+  train_path: "data/Italian/raw/HSD_it_train_translated.csv"
+  val_path: "data/Italian/raw/HSD_it_val_translated.csv"
+  test_path: "data/Italian/raw/HSD_it_test_translated.csv"
+  output_path_train: "data/Italian/cleaned/HSD_it_train_original_cleaned.csv"
+  output_path_val: "data/Italian/cleaned/HSD_it_val_original_cleaned.csv"
+  output_path_test: "data/Italian/cleaned/HSD_it_test_original_cleaned.csv"
+  original: True
+
+model:
+  base_model: "dbmdz/bert-base-italian-uncased"
+
+training:
+  batch_size: 16
+  learning_rate:  2.6714925151178636e-05
+  weight_decay:  0.07536260688516336
+  epochs: 5
+  logs_dir: outputs/logs/it_original/
