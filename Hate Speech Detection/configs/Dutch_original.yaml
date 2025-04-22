@@ -18,8 +18,8 @@ model:
   base_model: "GroNLP/bert-base-dutch-cased"
 
 training:
-  batch_size: 8
-  learning_rate:   9.800936458976657e-06
-  weight_decay:  0.031924415798451525
-  epochs: 3
+  batch_size: 32
+  learning_rate: 1.495725359323665e-05
+  weight_decay:   0.05379925564688293
+  epochs: 5
   logs_dir: outputs/logs/nl_original/

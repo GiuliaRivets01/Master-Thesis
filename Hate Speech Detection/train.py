@@ -16,7 +16,7 @@ import random
 from src.utils import load_model
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--cleaning", type=str, help="Skip data cleaning or not?", default="yes")
+parser.add_argument("--cleaning", type=str, help="Data cleaning or not?", default="no")
 parser.add_argument("--language", type=str, help="Dataset language", default="bg")
 parser.add_argument("--original", type=str, help="Original (or) or translated (tr) dataset?", default="tr")
 parser.add_argument("--tuning", type=str, help="Hyperparameter tuning (hp) or fine-tuning (ft)?", default="ft")
@@ -79,7 +79,10 @@ seed = config['general']['seed']
 random.seed(seed)
 logger = setup_logger(log_dir)
 
-if not args.cleaning:
+print("OK")
+print(args.cleaning)
+if args.cleaning == "yes":
+        print("Cleaning...")
         # Load and prepare dataset
         train, val, test = DatasetPreparer(
                 config['dataset']['train_path'],

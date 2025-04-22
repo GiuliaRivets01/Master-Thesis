@@ -15,8 +15,8 @@ dataset:
   original: False
 
 training:
-  batch_size: 32
-  learning_rate:   5.7956197451463476e-05
-  weight_decay:   0.011062693201908938
+  batch_size: 8
+  learning_rate:   2.6603342410423036e-06
+  weight_decay: 0.05000146507839025
   epochs: 4
   logs_dir: outputs/logs/nl_translated/

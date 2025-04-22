@@ -19,3 +19,7 @@ model:
 
 training:
   logs_dir: outputs/logs/ch_original/
+  learning_rate: 1.3809494656420674e-06
+  batch_size: 16
+  epochs: 3
+  weight_decay: 0.06235675017696792

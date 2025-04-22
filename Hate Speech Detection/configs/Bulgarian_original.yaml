@@ -19,3 +19,7 @@ model:
 
 training:
   logs_dir: outputs/logs/bg_original/
+  learning_rate: 4.777823390840949e-06
+  batch_size: 16
+  epochs: 6
+  weight_decay: 0.06952175204485106
