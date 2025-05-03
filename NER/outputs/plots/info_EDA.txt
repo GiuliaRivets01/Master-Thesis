@@ -1,0 +1,41 @@
+Plot saved to: outputs/plots/NER_label_proportions_across_datasets.png
+
+{'Dataset': 'Bulgarian', 'Label': 'O', 'Proportion': 0.6359910905128351}
+{'Dataset': 'Bulgarian', 'Label': 'B-PER', 'Proportion': 0.048141808338104844}
+{'Dataset': 'Bulgarian', 'Label': 'I-PER', 'Proportion': 0.06133816180372148}
+{'Dataset': 'Bulgarian', 'Label': 'B-LOC', 'Proportion': 0.07901024351199273}
+{'Dataset': 'Bulgarian', 'Label': 'I-LOC', 'Proportion': 0.03723877845295089}
+{'Dataset': 'Bulgarian', 'Label': 'B-ORG', 'Proportion': 0.04388192231478789}
+{'Dataset': 'Bulgarian', 'Label': 'I-ORG', 'Proportion': 0.09439799506560705}
+
+{'Dataset': 'Dutch', 'Label': 'O', 'Proportion': 0.6437468447110715}
+{'Dataset': 'Dutch', 'Label': 'B-ORG', 'Proportion': 0.0461417643637609}
+{'Dataset': 'Dutch', 'Label': 'I-ORG', 'Proportion': 0.07873829775299143}
+{'Dataset': 'Dutch', 'Label': 'B-LOC', 'Proportion': 0.05884558495735378}
+{'Dataset': 'Dutch', 'Label': 'I-LOC', 'Proportion': 0.04220632563467437}
+{'Dataset': 'Dutch', 'Label': 'B-PER', 'Proportion': 0.05534413684580343}
+{'Dataset': 'Dutch', 'Label': 'I-PER', 'Proportion': 0.0749770457343446}
+
+{'Dataset': 'Chinese', 'Label': 'O', 'Proportion': 0.7401896004896505}
+{'Dataset': 'Chinese', 'Label': 'B-PER', 'Proportion': 0.018565917352919355}
+{'Dataset': 'Chinese', 'Label': 'I-PER', 'Proportion': 0.06231568551079457}
+{'Dataset': 'Chinese', 'Label': 'B-ORG', 'Proportion': 0.018308572594406113}
+{'Dataset': 'Chinese', 'Label': 'I-ORG', 'Proportion': 0.0824813135247422}
+{'Dataset': 'Chinese', 'Label': 'B-LOC', 'Proportion': 0.02037544513687959}
+{'Dataset': 'Chinese', 'Label': 'I-LOC', 'Proportion': 0.05776346539060761}
+
+{'Dataset': 'Italian', 'Label': 'O', 'Proportion': 0.5933424665159589}
+{'Dataset': 'Italian', 'Label': 'B-PER', 'Proportion': 0.060362502821906035}
+{'Dataset': 'Italian', 'Label': 'I-PER', 'Proportion': 0.07233047689438804}
+{'Dataset': 'Italian', 'Label': 'B-LOC', 'Proportion': 0.05959865538110421}
+{'Dataset': 'Italian', 'Label': 'B-ORG', 'Proportion': 0.05024693610586245}
+{'Dataset': 'Italian', 'Label': 'I-LOC', 'Proportion': 0.05360229834582188}
+{'Dataset': 'Italian', 'Label': 'I-ORG', 'Proportion': 0.11051666393495854}
+
+{'Dataset': 'Russian', 'Label': 'B-PER', 'Proportion': 0.05058354763048577}
+{'Dataset': 'Russian', 'Label': 'I-PER', 'Proportion': 0.1074264560431797}
+{'Dataset': 'Russian', 'Label': 'O', 'Proportion': 0.5654124395964619}
+{'Dataset': 'Russian', 'Label': 'B-LOC', 'Proportion': 0.06679712888914008}
+{'Dataset': 'Russian', 'Label': 'I-LOC', 'Proportion': 0.044091050385734874}
+{'Dataset': 'Russian', 'Label': 'B-ORG', 'Proportion': 0.056200016955379094}
+{'Dataset': 'Russian', 'Label': 'I-ORG', 'Proportion': 0.10948936049961851}

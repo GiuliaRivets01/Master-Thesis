@@ -1,0 +1,19 @@
+# configs/Italian_translated.yaml
+
+dataset:
+  name: "Italian_NER"
+  language: "it"
+  train_path: "data/Italian/NER_it_train_translated.json"
+  val_path: "data/Italian/NER_it_val_translated.json"
+  test_path: "data/Italian/NER_it_test_translated.json"
+  original: False
+
+training_dir:
+  logs_dir: outputs/logs/it_translated/
+
+parameters:
+  per_device_train_batch_size: 16
+  per_device_eval_batch_size: 16
+  learning_rate: 4.914891689450937e-05
+  weight_decay: 0.028457018197063394
+  num_train_epochs: 3

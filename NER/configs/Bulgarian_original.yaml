@@ -1,0 +1,16 @@
+# configs/Bulgarian_original.yaml
+
+dataset:
+  name: "Bulgarian_NER"
+  language: "bg"
+  train_path: "data/Bulgarian/NER_bg_train.json"
+  val_path: "data/Bulgarian/NER_bg_val.json"
+  test_path: "data/Bulgarian/NER_bg_test.json"
+  original: True
+
+training:
+  logs_dir: outputs/logs/bg_original/
+
+model:
+  base_model: usmiva/bert-web-bg
+  

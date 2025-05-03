@@ -1,0 +1,15 @@
+# configs/Chinese_original.yaml
+
+dataset:
+  name: "Chinese_NER"
+  language: "ch"
+  train_path: "data/Chinese/NER_ch_train.json"
+  val_path: "data/Chinese/NER_ch_val.json"
+  test_path: "data/Chinese/NER_ch_test.json"
+  original: True
+
+training:
+  logs_dir: outputs/logs/ch_original/
+
+model:
+  base_model: google-bert/bert-base-chinese

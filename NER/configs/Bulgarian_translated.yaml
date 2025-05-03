@@ -1,0 +1,19 @@
+# configs/Bulgarian_translated.yaml
+
+dataset:
+  name: "Bulgarian_NER"
+  language: "bg"
+  train_path: "data/Bulgarian/NER_bg_train_translated.json"
+  val_path: "data/Bulgarian/NER_bg_val_translated.json"
+  test_path: "data/Bulgarian/NER_bg_test_translated.json"
+  original: False
+
+training_dir:
+  logs_dir: outputs/logs/bg_translated/
+
+parameters:
+  per_device_train_batch_size: 32
+  per_device_eval_batch_size: 32
+  learning_rate: 3.0103422227099126e-05
+  weight_decay: 0.015925290999696487
+  num_train_epochs: 5

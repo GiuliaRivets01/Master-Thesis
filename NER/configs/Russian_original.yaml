@@ -1,0 +1,15 @@
+# configs/Russian_original.yaml
+
+dataset:
+  name: "Russian_NER"
+  language: "ru"
+  train_path: "data/Russian/NER_ru_train.json"
+  val_path: "data/Russian/NER_ru_val.json"
+  test_path: "data/Russian/NER_ru_test.json"
+  original: True
+
+training:
+  logs_dir: outputs/logs/ru_original/
+
+model:
+  base_model: DeepPavlov/rubert-base-cased

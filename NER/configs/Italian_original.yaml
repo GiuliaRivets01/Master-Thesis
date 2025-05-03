@@ -1,0 +1,15 @@
+# configs/Italian_original.yaml
+
+dataset:
+  name: "Italian_NER"
+  language: "it"
+  train_path: "data/Italian/NER_it_train.json"
+  val_path: "data/Italian/NER_it_val.json"
+  test_path: "data/Italian/NER_it_test.json"
+  original: True
+
+training:
+  logs_dir: outputs/logs/it_original/
+
+model:
+  base_model: dbmdz/bert-base-italian-cased

@@ -1,0 +1,19 @@
+# configs/Chinese_translated.yaml
+
+dataset:
+  name: "Chinese_NER"
+  language: "ch"
+  train_path: "data/Chinese/NER_ch_train_translated.json"
+  val_path: "data/Chinese/NER_ch_val_translated.json"
+  test_path: "data/Chinese/NER_ch_test_translated.json"
+  original: False
+
+training_dir:
+  logs_dir: outputs/logs/ch_translated/
+
+parameters:
+  learning_rate: 4.049837526809278e-06
+  per_device_train_batch_size: 8
+  per_device_eval_batch_size: 8
+  num_train_epochs: 6
+  weight_decay: 0.02493506819212294

@@ -1,0 +1,15 @@
+# configs/Dutch_original.yaml
+
+dataset:
+  name: "Dutch_NER"
+  language: "nl"
+  train_path: "data/Dutch/NER_nl_train.json"
+  val_path: "data/Dutch/NER_nl_val.json"
+  test_path: "data/Dutch/NER_nl_test.json"
+  original: True
+
+training:
+  logs_dir: outputs/logs/nl_original/
+
+model:
+  base_model: GroNLP/bert-base-dutch-cased

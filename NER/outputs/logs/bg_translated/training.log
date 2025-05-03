@@ -1,0 +1,101 @@
+2025-04-19 15:01:15,244 - INFO - Train set mismatches: 0
+2025-04-19 15:01:15,244 - INFO - Validation set mismatches: 0
+2025-04-19 15:01:15,244 - INFO - Test set mismatches: 0
+2025-04-19 15:02:24,444 - INFO - Train set mismatches: 0
+2025-04-19 15:02:24,445 - INFO - Validation set mismatches: 0
+2025-04-19 15:02:24,445 - INFO - Test set mismatches: 0
+2025-04-19 15:04:24,473 - INFO - Train set mismatches: 0
+2025-04-19 15:04:24,475 - INFO - Validation set mismatches: 0
+2025-04-19 15:04:24,476 - INFO - Test set mismatches: 0
+2025-04-19 15:06:25,003 - INFO - Train set mismatches: 0
+2025-04-19 15:06:25,003 - INFO - Validation set mismatches: 0
+2025-04-19 15:06:25,003 - INFO - Test set mismatches: 0
+2025-04-19 15:11:25,866 - INFO - Train set mismatches: 0
+2025-04-19 15:11:25,867 - INFO - Validation set mismatches: 0
+2025-04-19 15:11:25,867 - INFO - Test set mismatches: 0
+2025-04-19 15:13:24,268 - INFO - Train set mismatches: 0
+2025-04-19 15:13:24,268 - INFO - Validation set mismatches: 0
+2025-04-19 15:13:24,268 - INFO - Test set mismatches: 0
+2025-04-19 15:16:06,854 - INFO - Train set mismatches: 0
+2025-04-19 15:16:06,855 - INFO - Validation set mismatches: 0
+2025-04-19 15:16:06,855 - INFO - Test set mismatches: 0
+2025-04-19 15:19:13,247 - INFO - Train set mismatches: 0
+2025-04-19 15:19:13,247 - INFO - Validation set mismatches: 0
+2025-04-19 15:19:13,247 - INFO - Test set mismatches: 0
+2025-04-19 15:20:12,165 - INFO - Train set mismatches: 0
+2025-04-19 15:20:12,165 - INFO - Validation set mismatches: 0
+2025-04-19 15:20:12,165 - INFO - Test set mismatches: 0
+2025-04-19 15:27:50,340 - INFO - Train set mismatches: 0
+2025-04-19 15:27:50,343 - INFO - Validation set mismatches: 0
+2025-04-19 15:27:50,343 - INFO - Test set mismatches: 0
+2025-04-19 15:39:39,289 - INFO - Train set mismatches: 0
+2025-04-19 15:39:39,289 - INFO - Validation set mismatches: 0
+2025-04-19 15:39:39,289 - INFO - Test set mismatches: 0
+2025-04-19 16:12:13,919 - INFO - Train set mismatches: 0
+2025-04-19 16:12:13,920 - INFO - Validation set mismatches: 0
+2025-04-19 16:12:13,920 - INFO - Test set mismatches: 0
+2025-04-19 16:14:07,034 - INFO - Train set mismatches: 0
+2025-04-19 16:14:07,035 - INFO - Validation set mismatches: 0
+2025-04-19 16:14:07,035 - INFO - Test set mismatches: 0
+2025-04-19 16:21:40,156 - INFO - Train set mismatches: 0
+2025-04-19 16:21:40,156 - INFO - Validation set mismatches: 0
+2025-04-19 16:21:40,156 - INFO - Test set mismatches: 0
+2025-04-19 16:25:47,311 - INFO - Train set mismatches: 0
+2025-04-19 16:25:47,311 - INFO - Validation set mismatches: 0
+2025-04-19 16:25:47,311 - INFO - Test set mismatches: 0
+2025-04-19 16:28:17,338 - INFO - Train set mismatches: 0
+2025-04-19 16:28:17,338 - INFO - Validation set mismatches: 0
+2025-04-19 16:28:17,338 - INFO - Test set mismatches: 0
+2025-04-19 16:29:49,043 - INFO - Train set mismatches: 0
+2025-04-19 16:29:49,044 - INFO - Validation set mismatches: 0
+2025-04-19 16:29:49,044 - INFO - Test set mismatches: 0
+2025-04-19 16:31:15,731 - INFO - Train set mismatches: 0
+2025-04-19 16:31:15,733 - INFO - Validation set mismatches: 0
+2025-04-19 16:31:15,733 - INFO - Test set mismatches: 0
+2025-04-19 16:49:17,188 - INFO - Train set mismatches: 0
+2025-04-19 16:49:17,189 - INFO - Validation set mismatches: 0
+2025-04-19 16:49:17,189 - INFO - Test set mismatches: 0
+2025-04-19 17:02:16,491 - INFO - Trial 0 | Params: {'learning_rate': 3.406922372514724e-05, 'batch_size': 32, 'num_train_epochs': 6, 'weight_decay': 0.03622367070941116} | Metrics: {'eval_loss': 0.18175023794174194, 'eval_overall_precision': 0.7818536303570783, 'eval_overall_recall': 0.818776467029643, 'eval_overall_f1': 0.7998891864438082, 'eval_overall_accuracy': 0.948670766200767, 'eval_LOC_f1': 0.8637707948243992, 'eval_ORG_f1': 0.668280326484661, 'eval_PER_f1': 0.8647218453188603, 'eval_runtime': 23.849, 'eval_samples_per_second': 419.305, 'eval_steps_per_second': 13.124, 'epoch': 6.0}
+2025-04-19 17:07:56,020 - INFO - Train set mismatches: 0
+2025-04-19 17:07:56,022 - INFO - Validation set mismatches: 0
+2025-04-19 17:07:56,022 - INFO - Test set mismatches: 0
+2025-04-19 17:24:39,359 - INFO - Trial 0 | Params: {'learning_rate': 6.847390193642219e-05, 'batch_size': 8, 'num_train_epochs': 6, 'weight_decay': 0.088947151777863} | Metrics: {'eval_loss': 0.20857319235801697, 'eval_overall_precision': 0.8240283775447255, 'eval_overall_recall': 0.808076225045372, 'eval_overall_f1': 0.8159743433109347, 'eval_overall_accuracy': 0.9541012711910093, 'eval_LOC_f1': 0.8781073039639122, 'eval_ORG_f1': 0.7131293893584097, 'eval_PER_f1': 0.845360824742268, 'eval_runtime': 27.1445, 'eval_samples_per_second': 368.399, 'eval_steps_per_second': 46.05, 'epoch': 6.0}
+2025-04-19 17:49:35,823 - INFO - Train set mismatches: 0
+2025-04-19 17:49:35,826 - INFO - Validation set mismatches: 0
+2025-04-19 17:49:35,826 - INFO - Test set mismatches: 0
+2025-04-19 18:03:44,477 - INFO - Trial 0 | Params: {'learning_rate': 8.700366828761536e-06, 'batch_size': 8, 'num_train_epochs': 5, 'weight_decay': 0.04002269739105898} | Metrics: {'eval_loss': 0.21031391620635986, 'eval_overall_precision': 0.780466472303207, 'eval_overall_recall': 0.809739866908651, 'eval_overall_f1': 0.794833729216152, 'eval_overall_accuracy': 0.9430677501320788, 'eval_LOC_f1': 0.8602199400163592, 'eval_ORG_f1': 0.6567534076827757, 'eval_PER_f1': 0.8551724137931035, 'eval_runtime': 27.2455, 'eval_samples_per_second': 367.033, 'eval_steps_per_second': 45.879, 'epoch': 5.0}
+2025-04-19 18:10:29,620 - INFO - Trial 1 | Params: {'learning_rate': 3.762419608364855e-06, 'batch_size': 32, 'num_train_epochs': 3, 'weight_decay': 0.055656642073123326} | Metrics: {'eval_loss': 0.20653222501277924, 'eval_overall_precision': 0.8087505133086945, 'eval_overall_recall': 0.8191167574107683, 'eval_overall_f1': 0.8139006292852448, 'eval_overall_accuracy': 0.9495548854778018, 'eval_LOC_f1': 0.8691250232212521, 'eval_ORG_f1': 0.6971225155740136, 'eval_PER_f1': 0.8663793103448276, 'eval_runtime': 23.8269, 'eval_samples_per_second': 419.694, 'eval_steps_per_second': 13.136, 'epoch': 3.0}
+2025-04-19 18:19:04,727 - INFO - Trial 2 | Params: {'learning_rate': 5.099848881346487e-05, 'batch_size': 8, 'num_train_epochs': 3, 'weight_decay': 0.010125212672905157} | Metrics: {'eval_loss': 0.2186504453420639, 'eval_overall_precision': 0.805661624320752, 'eval_overall_recall': 0.8296657592256503, 'eval_overall_f1': 0.8174875195589002, 'eval_overall_accuracy': 0.9531308963747516, 'eval_LOC_f1': 0.880870040043684, 'eval_ORG_f1': 0.6984466456551103, 'eval_PER_f1': 0.869296987087518, 'eval_runtime': 27.0061, 'eval_samples_per_second': 370.287, 'eval_steps_per_second': 46.286, 'epoch': 3.0}
+2025-04-19 18:27:50,946 - INFO - Trial 3 | Params: {'learning_rate': 9.554679701510582e-06, 'batch_size': 32, 'num_train_epochs': 4, 'weight_decay': 0.06610177150520785} | Metrics: {'eval_loss': 0.20473481714725494, 'eval_overall_precision': 0.809805487008274, 'eval_overall_recall': 0.8437310949788264, 'eval_overall_f1': 0.8264202651655433, 'eval_overall_accuracy': 0.9547841275431906, 'eval_LOC_f1': 0.8856996412096361, 'eval_ORG_f1': 0.7159008632692844, 'eval_PER_f1': 0.8752399232245681, 'eval_runtime': 23.6659, 'eval_samples_per_second': 422.548, 'eval_steps_per_second': 13.226, 'epoch': 4.0}
+2025-04-19 18:36:24,883 - INFO - Trial 4 | Params: {'learning_rate': 2.5179330018675504e-06, 'batch_size': 8, 'num_train_epochs': 3, 'weight_decay': 0.043614061602345586} | Metrics: {'eval_loss': 0.22995634377002716, 'eval_overall_precision': 0.8105339105339106, 'eval_overall_recall': 0.8495160314579552, 'eval_overall_f1': 0.829567272190223, 'eval_overall_accuracy': 0.9572999141038588, 'eval_LOC_f1': 0.8848288621646623, 'eval_ORG_f1': 0.7193402797124867, 'eval_PER_f1': 0.8832271762208068, 'eval_runtime': 26.9185, 'eval_samples_per_second': 371.492, 'eval_steps_per_second': 46.437, 'epoch': 3.0}
+2025-04-19 18:47:16,173 - INFO - Trial 5 | Params: {'learning_rate': 3.858587725718419e-05, 'batch_size': 32, 'num_train_epochs': 5, 'weight_decay': 0.06998119662949324} | Metrics: {'eval_loss': 0.25943976640701294, 'eval_overall_precision': 0.8140882585846951, 'eval_overall_recall': 0.855149727767695, 'eval_overall_f1': 0.8341139590632491, 'eval_overall_accuracy': 0.9541839327494313, 'eval_LOC_f1': 0.8879065655390628, 'eval_ORG_f1': 0.7291750968264061, 'eval_PER_f1': 0.8768134715025906, 'eval_runtime': 23.5529, 'eval_samples_per_second': 424.577, 'eval_steps_per_second': 13.289, 'epoch': 5.0}
+2025-04-19 18:58:07,731 - INFO - Trial 6 | Params: {'learning_rate': 3.0103422227099126e-05, 'batch_size': 32, 'num_train_epochs': 5, 'weight_decay': 0.015925290999696487} | Metrics: {'eval_loss': 0.27256467938423157, 'eval_overall_precision': 0.8317620102918529, 'eval_overall_recall': 0.837265577737447, 'eval_overall_f1': 0.8345047200919523, 'eval_overall_accuracy': 0.9549099168712241, 'eval_LOC_f1': 0.8826894888647216, 'eval_ORG_f1': 0.7413924570356033, 'eval_PER_f1': 0.8727223828413905, 'eval_runtime': 23.5564, 'eval_samples_per_second': 424.514, 'eval_steps_per_second': 13.287, 'epoch': 5.0}
+2025-04-19 19:10:04,192 - INFO - Trial 7 | Params: {'learning_rate': 2.1890871738561327e-05, 'batch_size': 16, 'num_train_epochs': 5, 'weight_decay': 0.01080774847252309} | Metrics: {'eval_loss': 0.28345340490341187, 'eval_overall_precision': 0.8251236175593553, 'eval_overall_recall': 0.8265275257108288, 'eval_overall_f1': 0.8258249749721388, 'eval_overall_accuracy': 0.9547769395815887, 'eval_LOC_f1': 0.8645994362098754, 'eval_ORG_f1': 0.7439816820347794, 'eval_PER_f1': 0.8575872328915336, 'eval_runtime': 25.3729, 'eval_samples_per_second': 394.122, 'eval_steps_per_second': 24.633, 'epoch': 5.0}
+2025-04-19 19:16:45,384 - INFO - Trial 8 | Params: {'learning_rate': 4.794939763229639e-06, 'batch_size': 32, 'num_train_epochs': 3, 'weight_decay': 0.07876321431741534} | Metrics: {'eval_loss': 0.27608004212379456, 'eval_overall_precision': 0.8225705097401397, 'eval_overall_recall': 0.841386872353297, 'eval_overall_f1': 0.8318723014523093, 'eval_overall_accuracy': 0.9563834489996155, 'eval_LOC_f1': 0.8783078472667337, 'eval_ORG_f1': 0.7448520710059171, 'eval_PER_f1': 0.8627955823565282, 'eval_runtime': 23.6897, 'eval_samples_per_second': 422.124, 'eval_steps_per_second': 13.212, 'epoch': 3.0}
+2025-04-19 19:31:00,061 - INFO - Trial 9 | Params: {'learning_rate': 5.176538972734721e-06, 'batch_size': 16, 'num_train_epochs': 6, 'weight_decay': 0.08551033461166689} | Metrics: {'eval_loss': 0.28909197449684143, 'eval_overall_precision': 0.8107138976420732, 'eval_overall_recall': 0.8463021778584392, 'eval_overall_f1': 0.8281258671402407, 'eval_overall_accuracy': 0.9559988930539133, 'eval_LOC_f1': 0.8799270904534062, 'eval_ORG_f1': 0.7329667149059335, 'eval_PER_f1': 0.862303700208937, 'eval_runtime': 25.3633, 'eval_samples_per_second': 394.27, 'eval_steps_per_second': 24.642, 'epoch': 6.0}
+2025-04-19 19:31:00,063 - INFO - Best hyperparameters: {'learning_rate': 3.0103422227099126e-05, 'batch_size': 32, 'num_train_epochs': 5, 'weight_decay': 0.015925290999696487}
+2025-04-22 22:21:31,229 - INFO - Train set mismatches: 0
+2025-04-22 22:21:31,232 - INFO - Validation set mismatches: 0
+2025-04-22 22:21:31,232 - INFO - Test set mismatches: 0
+2025-04-22 22:22:50,857 - INFO - Train set mismatches: 0
+2025-04-22 22:22:50,857 - INFO - Validation set mismatches: 0
+2025-04-22 22:22:50,857 - INFO - Test set mismatches: 0
+2025-04-22 22:27:13,453 - INFO - Train set mismatches: 0
+2025-04-22 22:27:13,455 - INFO - Validation set mismatches: 0
+2025-04-22 22:27:13,455 - INFO - Test set mismatches: 0
+2025-04-22 22:43:58,188 - INFO - Train set mismatches: 0
+2025-04-22 22:43:58,190 - INFO - Validation set mismatches: 0
+2025-04-22 22:43:58,190 - INFO - Test set mismatches: 0
+2025-04-23 12:04:11,907 - INFO - Train set mismatches: 0
+2025-04-23 12:04:11,910 - INFO - Validation set mismatches: 0
+2025-04-23 12:04:11,910 - INFO - Test set mismatches: 0
+2025-04-23 12:06:57,871 - INFO - Train set mismatches: 0
+2025-04-23 12:06:57,872 - INFO - Validation set mismatches: 0
+2025-04-23 12:06:57,872 - INFO - Test set mismatches: 0
+2025-04-23 12:06:58,040 - INFO - Training args: 
+2025-04-23 12:09:40,992 - INFO - Train set mismatches: 0
+2025-04-23 12:09:40,994 - INFO - Validation set mismatches: 0
+2025-04-23 12:09:40,994 - INFO - Test set mismatches: 0
+2025-04-23 12:09:41,067 - INFO - Training args: 
+2025-04-23 12:21:06,117 - INFO - Validation metrics: {'eval_loss': 0.1993631273508072, 'eval_overall_precision': 0.8070136251954434, 'eval_overall_recall': 0.8196460980036298, 'eval_overall_f1': 0.8132808103545301, 'eval_overall_accuracy': 0.950169456194765, 'eval_LOC_f1': 0.8679696481949873, 'eval_ORG_f1': 0.699135239010329, 'eval_PER_f1': 0.8609937638302153, 'eval_runtime': 23.6362, 'eval_samples_per_second': 423.08, 'eval_steps_per_second': 13.242, 'epoch': 5.0}
+2025-04-23 12:21:29,793 - INFO - Test metrics: {'eval_loss': 0.2019432932138443, 'eval_overall_precision': 0.8258170401027544, 'eval_overall_recall': 0.8370764167661205, 'eval_overall_f1': 0.8314086100684279, 'eval_overall_accuracy': 0.9486707632484244, 'eval_LOC_f1': 0.871032009563023, 'eval_ORG_f1': 0.7532370251471375, 'eval_PER_f1': 0.8707124010554089, 'eval_runtime': 23.6742, 'eval_samples_per_second': 422.401, 'eval_steps_per_second': 13.221, 'epoch': 5.0}
