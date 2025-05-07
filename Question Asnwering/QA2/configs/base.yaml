@@ -1,0 +1,29 @@
+# configs/base.yaml
+
+general:
+    seed: 42
+
+training:
+    output_dir: "./results_QA"
+    evaluation_strategy: "steps"
+    eval_steps: 500
+    save_strategy: "steps"
+    save_steps: 500
+    save_total_limit: 3
+    remove_unused_columns: False
+    load_best_model_at_end: True
+    report_to: "none" 
+
+parameters:
+    per_device_train_batch_size: 16
+    per_device_eval_batch_size: 16
+    learning_rate: 5e-05
+    weight_decay: 0.01
+    num_train_epochs: 3
+
+  
+model:
+    base_model: "bert-base-cased"
+    max_length:  384
+    stride: 128
+  

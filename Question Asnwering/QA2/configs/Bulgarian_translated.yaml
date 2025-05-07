@@ -1,0 +1,22 @@
+# configs/Bulgarian_translated.yaml
+
+dataset:
+  name: "Bulgarian_QA"
+  language: "bg"
+  train_path: "data/Bulgarian/raw/QA_bg_train_translated.csv"
+  val_path: "data/Bulgarian/raw/QA_bg_val_translated.csv"
+  test_path: "data/Bulgarian/raw/QA_bg_test_translated.csv"
+  cleaned_train_path: "data/Bulgarian/cleaned/QA_bg_train_translated_cleaned.csv"
+  cleaned_val_path: "data/Bulgarian/cleaned/QA_bg_val_translated_cleaned.csv"
+  cleaned_test_path: "data/Bulgarian/cleaned/QA_bg_test_translated_cleaned.csv"
+  original: False
+
+training_dir:
+  logs_dir: outputs/logs/bg_translated/
+
+parameters:
+    per_device_train_batch_size: 16
+    per_device_eval_batch_size: 16
+    learning_rate: 3.829022672594576e-05
+    weight_decay: 0.05320565575218651
+    num_train_epochs: 6

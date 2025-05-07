@@ -1,0 +1,25 @@
+# configs/Italian_translated.yaml
+
+dataset:
+  name: "Italian_QA"
+  language: "it"
+  train_path: "data/Italian/raw/QA_it_train_translated.csv"
+  val_path: "data/Italian/raw/QA_it_val_translated.csv"
+  test_path: "data/Italian/raw/QA_it_test_translated.csv"
+  cleaned_train_path: "data/Italian/cleaned/QA_it_train_translated_start.csv"
+  cleaned_val_path: "data/Italian/cleaned/QA_it_val_translated_start.csv"
+  cleaned_test_path: "data/Italian/cleaned/QA_it_test_translated_start.csv"
+  original: False
+
+model:
+  stride: 64
+
+training_dir:
+  logs_dir: outputs/logs/it_translated/
+
+parameters:
+    per_device_train_batch_size: 16
+    per_device_eval_batch_size: 16
+    learning_rate: 9.923580434225943e-06
+    weight_decay: 0.03359115697094058
+    num_train_epochs: 5
