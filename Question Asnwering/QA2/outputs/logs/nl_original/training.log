@@ -1,0 +1,7 @@
+2025-05-08 15:00:52,047 - INFO - Dataset Dutch_QA | Language: nl | Original: True
+2025-05-08 15:10:06,903 - INFO - Dataset Dutch_QA | Language: nl | Original: True
+2025-05-08 15:10:54,556 - INFO - Dataset Dutch_QA | Language: nl | Original: True
+2025-05-08 15:10:54,763 - INFO - Using model GroNLP/bert-base-dutch-cased
+2025-05-08 15:10:56,379 - INFO - Training with parameters {'per_device_train_batch_size': 8, 'per_device_eval_batch_size': 8, 'learning_rate': 1.4171596040715709e-05, 'weight_decay': 0.042478097940875204, 'num_train_epochs': 5}
+2025-05-08 15:11:07,253 - INFO - Validation results: {'exact_match': 10.0, 'f1': 48.85583394534801}
+2025-05-08 15:11:07,323 - INFO - Test results: {'exact_match': 0.0, 'f1': 46.444764786870046}

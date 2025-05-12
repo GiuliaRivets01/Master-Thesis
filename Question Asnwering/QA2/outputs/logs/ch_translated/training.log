@@ -1,0 +1,15 @@
+2025-05-06 18:37:35,101 - INFO - Dataset Chinese_QA | Language: ch | Original: False
+2025-05-06 18:41:33,588 - INFO - Trial 0 | Params: {'learning_rate': 1.5443047455619525e-06, 'batch_size': 32, 'num_train_epochs': 5, 'weight_decay': 0.03596316250900256} | Metrics: {'exact_match': 9.483960948396096, 'f1': 19.0747161768155}
+2025-05-06 18:44:15,943 - INFO - Trial 1 | Params: {'learning_rate': 2.1781049109356783e-05, 'batch_size': 16, 'num_train_epochs': 3, 'weight_decay': 0.09922358429752065} | Metrics: {'exact_match': 46.23430962343096, 'f1': 58.76889785321706}
+2025-05-06 18:48:09,388 - INFO - Trial 2 | Params: {'learning_rate': 1.4970842665324835e-05, 'batch_size': 8, 'num_train_epochs': 3, 'weight_decay': 0.031057917868424885} | Metrics: {'exact_match': 47.07112970711297, 'f1': 59.02409855860471}
+2025-05-06 18:50:28,928 - INFO - Trial 3 | Params: {'learning_rate': 7.987632563465495e-06, 'batch_size': 32, 'num_train_epochs': 3, 'weight_decay': 0.045199158275121276} | Metrics: {'exact_match': 47.69874476987448, 'f1': 59.27688572774362}
+2025-05-06 18:54:53,878 - INFO - Trial 4 | Params: {'learning_rate': 3.0715711455472755e-05, 'batch_size': 16, 'num_train_epochs': 5, 'weight_decay': 0.0382234307585234} | Metrics: {'exact_match': 45.81589958158996, 'f1': 58.11175214377978}
+2025-05-06 18:57:36,370 - INFO - Trial 5 | Params: {'learning_rate': 1.7432929254330735e-06, 'batch_size': 16, 'num_train_epochs': 3, 'weight_decay': 0.03351189998098734} | Metrics: {'exact_match': 45.885634588563455, 'f1': 57.90885372746404}
+2025-05-06 18:59:55,954 - INFO - Trial 6 | Params: {'learning_rate': 1.3834590633652635e-05, 'batch_size': 32, 'num_train_epochs': 3, 'weight_decay': 0.07999214505095811} | Metrics: {'exact_match': 45.74616457461646, 'f1': 57.829979549060965}
+2025-05-06 19:03:51,870 - INFO - Trial 7 | Params: {'learning_rate': 5.9653363672947794e-05, 'batch_size': 8, 'num_train_epochs': 3, 'weight_decay': 0.07522166858359626} | Metrics: {'exact_match': 45.676429567642955, 'f1': 57.299607437685786}
+2025-05-06 19:07:47,168 - INFO - Trial 8 | Params: {'learning_rate': 7.425577182466273e-06, 'batch_size': 8, 'num_train_epochs': 3, 'weight_decay': 0.056091377322139875} | Metrics: {'exact_match': 45.39748953974895, 'f1': 57.86415491144209}
+2025-05-06 19:11:20,494 - INFO - Trial 9 | Params: {'learning_rate': 1.7804904190921562e-05, 'batch_size': 16, 'num_train_epochs': 4, 'weight_decay': 0.0735569225544818} | Metrics: {'exact_match': 44.700139470013944, 'f1': 56.792565287714694}
+2025-05-06 19:11:20,495 - INFO - Best hyperparameters: {'learning_rate': 7.987632563465495e-06, 'batch_size': 32, 'num_train_epochs': 3, 'weight_decay': 0.045199158275121276}
+2025-05-06 21:10:37,809 - INFO - Dataset Chinese_QA | Language: ch | Original: False
+2025-05-06 21:13:07,573 - INFO - Validation results: {'exact_match': 28.800557880055788, 'f1': 42.28906982471596}
+2025-05-06 21:13:14,475 - INFO - Test results: {'exact_match': 29.477351916376307, 'f1': 42.452353159974464}
