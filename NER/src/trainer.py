@@ -3,10 +3,10 @@ import numpy as np
 from transformers import TrainingArguments, Trainer
 import os
 import yaml
-from src.utils import compute_metrics
+from src.utils import compute_metrics, CustomTrainer
 
 class NER_Trainer():
-    def __init__(self, label_names, model, tokenizer, train_dataset, validation_dataset, data_collator, config, logger):
+    def __init__(self, label_names, model, tokenizer, train_dataset, validation_dataset, data_collator, config, logger, loss_fn):
         self.label_names = label_names
         self.model = model
         self.tokenizer = tokenizer
@@ -15,6 +15,7 @@ class NER_Trainer():
         self.data_collator = data_collator
         self.config = config
         self.logger = logger
+        self.loss_fn = loss_fn
     
     def main(self):
         training_args_1 = self.config['training']
@@ -37,14 +38,15 @@ class NER_Trainer():
         else:
             print("No checkpoint found, starting from scratch.")
 
-        trainer = Trainer(
+        trainer = CustomTrainer(
             model=self.model,
             args=training_args,
             train_dataset=self.train_dataset,
             eval_dataset=self.validation_dataset,
             data_collator=self.data_collator,
             tokenizer=self.tokenizer,
-            compute_metrics=compute_metrics
+            compute_metrics=compute_metrics,
+            loss_fn = self.loss_fn
         )
 
         return trainer, last_checkpoint

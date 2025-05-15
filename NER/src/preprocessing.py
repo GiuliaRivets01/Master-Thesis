@@ -1,6 +1,11 @@
+import torch
+from sklearn.utils.class_weight import compute_class_weight
+
+from sklearn.utils.class_weight import compute_class_weight
+import torch
 
 class Preprocessor():
-    def __init__(self, train, val, test, logger, label_names, tokenizer, original):
+    def __init__(self, train, val, test, logger, label_names, tokenizer, original, token_col):
         self.train = train
         self.val = val
         self.test = test
@@ -8,6 +13,7 @@ class Preprocessor():
         self.label_names = label_names
         self.tokenizer = tokenizer
         self.original = original
+        self.token_col = token_col
 
     def clean_translated_tokens(self, example):
         example["translated_tokens"] = [
@@ -37,9 +43,9 @@ class Preprocessor():
             self.logger.info("Example mismatch from train set:", mismatched_train[0])
 
 
-    def tokenize_adjust_labels(self,examples):
+    def tokenize_adjust_labels(self, examples):
         tokenized_inputs = self.tokenizer(
-            examples["translated_tokens"],
+            examples[self.token_col],
             is_split_into_words=True,
             padding="max_length",
             max_length=128,
@@ -47,7 +53,7 @@ class Preprocessor():
         )
 
         all_labels = []
-        for i, word_ids in enumerate(tokenized_inputs.word_ids(batch_index=i) for i in range(len(examples["translated_tokens"]))):
+        for i, word_ids in enumerate(tokenized_inputs.word_ids(batch_index=i) for i in range(len(examples[self.token_col]))):
             previous_word_idx = None
             label_ids = []
             for word_idx in word_ids:
@@ -71,9 +77,11 @@ class Preprocessor():
             val = self.val.map(self.clean_translated_tokens)
             test = self.test.map(self.clean_translated_tokens)
 
-            print(train[0])
             self.check_correct_translation()
-        
+        else:
+            train = self.train
+            val = self.val
+            test = self.test
 
         # Tokenization
         tokenized_train = train.map(

@@ -20,6 +20,7 @@ from src.preprocessing import Preprocessor
 from src.trainer import NER_Trainer
 import optuna
 from src.hp_tuning import objective
+from src.utils import get_class_weights
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -94,10 +95,16 @@ train, val, test = get_datastes(config['dataset']['train_path'],
                                          config['dataset']['val_path'],
                                          config['dataset']['test_path'])
 
-print(train[0])
+
 # Preprocessing
-tokenized_train, tokenized_val, tokenized_test = Preprocessor(train, val, test, logger, label_names, tokenizer, config['dataset']['original']).main()
-print(tokenized_train[0])
+tokenized_train, tokenized_val, tokenized_test = Preprocessor(train, val, test, logger, label_names, 
+                                                              tokenizer, 
+                                                              config['dataset']['original'],
+                                                              config['dataset']['token_col']).main()
+
+label_ids = [0, 1, 2, 3, 4, 5, 6]
+class_weights = get_class_weights(train_dataset=tokenized_train, label_list=label_ids, device=device)
+loss_fn = torch.nn.CrossEntropyLoss(weight=class_weights, ignore_index=-100)
 
 # HP Tuning
 if args.tuning == "hp":
@@ -105,14 +112,14 @@ if args.tuning == "hp":
     # Create a study object for optimization
     study = optuna.create_study(direction="maximize")  # Optimize for maximum F1 score
     # Pass the datasets and model into the optimization process
-    study.optimize(lambda trial: objective(trial, tokenized_train, tokenized_val, model, tokenizer, data_collator, logger), n_trials=10)
+    study.optimize(lambda trial: objective(trial, tokenized_train, tokenized_val, model, tokenizer, data_collator, logger, loss_fn), n_trials=10)
     # Print the best hyperparameters found
     logger.info(f"Best hyperparameters: {study.best_params}")
 
 # Training
 if args.tuning == "ft":
     trainer, last_checkpoint = NER_Trainer(label_names, model, tokenizer, 
-                                        tokenized_train, tokenized_val, data_collator, config, logger).main()
+                                        tokenized_train, tokenized_val, data_collator, config, logger, loss_fn).main()
 
     trainer.train(resume_from_checkpoint=last_checkpoint)
 

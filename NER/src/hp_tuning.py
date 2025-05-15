@@ -1,7 +1,7 @@
 from transformers import Trainer, TrainingArguments
-from src.utils import compute_metrics
+from src.utils import compute_metrics, CustomTrainer
 
-def objective(trial, train_dataset, val_dataset, model, tokenizer, data_collator, logger):
+def objective(trial, train_dataset, val_dataset, model, tokenizer, data_collator, logger, loss_fn):
     # Define hyperparameters to be tuned
     learning_rate = trial.suggest_loguniform("learning_rate", 1e-6, 1e-4)
     batch_size = trial.suggest_categorical("batch_size", [8, 16, 32])
@@ -22,17 +22,18 @@ def objective(trial, train_dataset, val_dataset, model, tokenizer, data_collator
         report_to="none",
         learning_rate=learning_rate,
     )
-    
-    trainer = Trainer(
-                model=model,
-                args=training_args,
-                train_dataset=train_dataset,
-                eval_dataset=val_dataset,
-                data_collator=data_collator,
-                tokenizer=tokenizer,
-                compute_metrics=compute_metrics
-            )
 
+    trainer = CustomTrainer(
+        model=model,
+        args=training_args,
+        train_dataset=train_dataset,
+        eval_dataset=val_dataset,
+        data_collator=data_collator,
+        tokenizer=tokenizer,
+        compute_metrics=compute_metrics,
+        loss_fn=loss_fn
+    )
+    
 
     # Train and evaluate the model
     trainer.train()
