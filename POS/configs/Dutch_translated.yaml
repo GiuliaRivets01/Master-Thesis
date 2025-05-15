@@ -1,0 +1,25 @@
+# configs/Dutch_translated.yaml
+
+dataset:
+  name: "UD_Dutch-Alpino"
+  language: "nl"
+  # Before translation
+  train_path_conllu: "data/Dutch/raw/nl_alpino-ud-train.conllu"
+  val_path_conllu: "data/Dutch/raw/nl_alpino-ud-dev.conllu"
+  test_path_conllu: "data/Dutch/raw/nl_alpino-ud-test.conllu"
+  # After translation
+  train_path_raw: "data/Dutch/raw/POS_nl_train_adjusted_translated.csv"
+  val_path_raw: "data/Dutch/raw/POS_nl_val_adjusted_translated.csv"
+  test_path_raw: "data/Dutch/raw/POS_nl_test_adjusted_translated.csv"
+  # After annotation
+  train_path_annotated: "data/Dutch/annotated/POS_nl_train_translated_annotated.csv"
+  val_path_annotated: "data/Dutch/annotated/POS_nl_val_translated_annotated.csv"
+  test_path_annotated: "data/Dutch/annotated/POS_nl_test_translated_annotated.csv"
+  original: False
+
+training:
+  logs_dir: outputs/logs/nl_translated/
+  learning_rate: 2.062234987318016e-05
+  batch_size: 32
+  epochs: 3
+  weight_decay: 0.051956176884654225

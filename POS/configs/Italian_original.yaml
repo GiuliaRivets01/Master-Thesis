@@ -1,0 +1,19 @@
+# configs/Italian_original.yaml
+
+dataset:
+  name: "PoSTWITA-UD"
+  language: "it"
+  train_path_annotated: "data/Italian/annotated/POS_it_train_translated_annotated.csv"
+  val_path_annotated: "data/Italian/annotated/POS_it_val_translated_annotated.csv"
+  test_path_annotated: "data/Italian/annotated/POS_it_test_translated_annotated.csv"
+  original: True
+
+training:
+  logs_dir: outputs/logs/it_original/
+  learning_rate: 4.285109147265024e-05
+  batch_size: 16
+  epochs: 5
+  weight_decay: 0.09357569680001776
+
+model:
+  base_model: "dbmdz/bert-base-italian-cased"

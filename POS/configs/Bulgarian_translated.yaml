@@ -1,0 +1,26 @@
+# configs/Bulgarian_translated.yaml
+
+dataset:
+  name: "UD_Bulgarian-BTB"
+  language: "bg"
+  # Before translation
+  train_path_conllu: "data/Bulgarian/raw/bg_btb-ud-train.conllu"
+  val_path_conllu: "data/Bulgarian/raw/bg_btb-ud-dev.conllu"
+  test_path_conllu: "data/Bulgarian/raw/bg_btb-ud-test.conllu"
+  # After translation
+  train_path_raw: "data/Bulgarian/raw/POS_bg_train_adjusted_translated.csv"
+  val_path_raw: "data/Bulgarian/raw/POS_bg_val_adjusted_translated.csv"
+  test_path_raw: "data/Bulgarian/raw/POS_bg_test_adjusted_translated.csv"
+  # After annotation
+  train_path_annotated: "data/Bulgarian/annotated/POS_bg_train_translated_annotated.csv"
+  val_path_annotated: "data/Bulgarian/annotated/POS_bg_val_translated_annotated.csv"
+  test_path_annotated: "data/Bulgarian/annotated/POS_bg_test_translated_annotated.csv"
+  original: False
+
+training:
+  logs_dir: outputs/logs/bg_translated/
+  learning_rate: 4.542400971751368e-06
+  batch_size: 16
+  epochs: 4
+  weight_decay: 0.05309409301544687
+

@@ -1,0 +1,21 @@
+# configs/base.yaml
+
+general:
+    seed: 42
+    output_dir: "./results_POS"
+    evaluation_strategy: "steps"
+    eval_steps: 500
+    save_strategy: steps
+    save_steps: 500
+    save_total_limit: 2
+    load_best_model_at_end: True
+    report_to: "none"  
+  
+training:
+    batch_size: 16
+    learning_rate: 5e-5
+    weight_decay: 0.01
+    epochs: 3
+  
+model:
+    base_model: "bert-base-cased"

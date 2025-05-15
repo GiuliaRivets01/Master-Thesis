@@ -1,0 +1,25 @@
+# configs/Chinese_translated.yaml
+
+dataset:
+  name: "UD_Chinese-GSD"
+  language: "ch"
+  # Before translation
+  train_path_conllu: "data/Chinese/raw/zh_gsd-ud-train.conllu"
+  val_path_conllu: "data/Chinese/raw/zh_gsd-ud-dev.conllu"
+  test_path_conllu: "data/Chinese/raw/zh_gsd-ud-test.conllu"
+  # After translation
+  train_path_raw: "data/Chinese/raw/POS_zh_train_adjusted_translated.csv"
+  val_path_raw: "data/Chinese/raw/POS_zh_val_adjusted_translated.csv"
+  test_path_raw: "data/Chinese/raw/POS_zh_test_adjusted_translated.csv"
+  # After annotation
+  train_path_annotated: "data/Chinese/annotated/POS_ch_train_translated_annotated.csv"
+  val_path_annotated: "data/Chinese/annotated/POS_ch_val_translated_annotated.csv"
+  test_path_annotated: "data/Chinese/annotated/POS_ch_test_translated_annotated.csv"
+  original: False
+
+training:
+  logs_dir: outputs/logs/ch_translated/
+  learning_rate: 6.060194827872888e-05
+  batch_size: 8
+  epochs: 6
+  weight_decay: 0.0793389295055566

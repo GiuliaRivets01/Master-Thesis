@@ -1,0 +1,25 @@
+# configs/Italian_translated.yaml
+
+dataset:
+  name: "PoSTWITA-UD"
+  language: "it"
+  # Before translation
+  train_path_conllu: "data/Italian/raw/it_postwita-ud-train.conllu"
+  val_path_conllu: "data/Italian/raw/it_postwita-ud-dev.conllu"
+  test_path_conllu: "data/Italian/raw/it_postwita-ud-test.conllu"
+  # After translation
+  train_path_raw: "data/Italian/raw/POS_it_train_adjusted_translated.csv"
+  val_path_raw: "data/Italian/raw/POS_it_val_adjusted_translated.csv"
+  test_path_raw: "data/Italian/raw/POS_it_test_adjusted_translated.csv"
+  # After annotation
+  train_path_annotated: "data/Italian/annotated/POS_it_train_translated_annotated.csv"
+  val_path_annotated: "data/Italian/annotated/POS_it_val_translated_annotated.csv"
+  test_path_annotated: "data/Italian/annotated/POS_it_test_translated_annotated.csv"
+  original: False
+
+training:
+  logs_dir: outputs/logs/it_translated/
+  learning_rate: 6.736639552895732e-06
+  batch_size: 32
+  epochs: 6
+  weight_decay: 0.07914178884196298

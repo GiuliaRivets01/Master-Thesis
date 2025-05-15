@@ -1,0 +1,19 @@
+# configs/Dutch_original.yaml
+
+dataset:
+  name: "UD_Dutch-Alpino"
+  language: "nl"
+  train_path_annotated: "data/Dutch/annotated/POS_nl_train_translated_annotated.csv"
+  val_path_annotated: "data/Dutch/annotated/POS_nl_val_translated_annotated.csv"
+  test_path_annotated: "data/Dutch/annotated/POS_nl_test_translated_annotated.csv"
+  original: True
+
+training:
+  logs_dir: outputs/logs/nl_original/
+  learning_rate: 1.539492676490614e-06
+  batch_size: 16
+  epochs: 3
+  weight_decay: 0.017622981931705112
+
+model:
+  base_model: "GroNLP/bert-base-dutch-cased"

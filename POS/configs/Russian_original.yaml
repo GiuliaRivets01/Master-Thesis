@@ -1,0 +1,19 @@
+# configs/Russian_original.yaml
+
+dataset:
+  name: "UD_Russian-Taiga"
+  language: "ru"
+  train_path_annotated: "data/Russian/annotated/POS_ru_train_translated_annotated.csv"
+  val_path_annotated: "data/Russian/annotated/POS_ru_val_translated_annotated.csv"
+  test_path_annotated: "data/Russian/annotated/POS_ru_test_translated_annotated.csv"
+  original: True
+
+training:
+  logs_dir: outputs/logs/ru_original/
+  learning_rate: 4.670975549251106e-06
+  batch_size: 16
+  epochs: 3
+  weight_decay: 0.08270957772419783
+
+model:
+  base_model: "DeepPavlov/rubert-base-cased"

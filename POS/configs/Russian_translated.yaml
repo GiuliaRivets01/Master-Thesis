@@ -1,0 +1,25 @@
+# configs/Russian_translated.yaml
+
+dataset:
+  name: "UD_Russian-Taiga"
+  language: "ru"
+  # Before translation
+  train_path_conllu: "data/Russian/raw/ru_taiga-ud-train.conllu"
+  val_path_conllu: "data/Russian/raw/ru_taiga-ud-dev.conllu"
+  test_path_conllu: "data/Russian/raw/ru_taiga-ud-test.conllu"
+  # After translation
+  train_path_raw: "data/Russian/raw/POS_ru_train_adjusted_translated.csv"
+  val_path_raw: "data/Russian/raw/POS_ru_val_adjusted_translated.csv"
+  test_path_raw: "data/Russian/raw/POS_ru_test_adjusted_translated.csv"
+  # After annotation
+  train_path_annotated: "data/Russian/annotated/POS_ru_train_translated_annotated.csv"
+  val_path_annotated: "data/Russian/annotated/POS_ru_val_translated_annotated.csv"
+  test_path_annotated: "data/Russian/annotated/POS_ru_test_translated_annotated.csv"
+  original: False
+
+training:
+  logs_dir: outputs/logs/ru_translated/
+  learning_rate: 1.0449307312295768e-06
+  batch_size: 32
+  epochs: 5
+  weight_decay: 0.012648022559809353

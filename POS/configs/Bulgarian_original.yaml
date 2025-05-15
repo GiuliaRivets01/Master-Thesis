@@ -1,0 +1,19 @@
+# configs/Bulgarian_original.yaml
+
+dataset:
+  name: "UD_Bulgarian-BTB"
+  language: "bg"
+  train_path_annotated: "data/Bulgarian/annotated/POS_bg_train_translated_annotated.csv"
+  val_path_annotated: "data/Bulgarian/annotated/POS_bg_val_translated_annotated.csv"
+  test_path_annotated: "data/Bulgarian/annotated/POS_bg_test_translated_annotated.csv"
+  original: True
+
+training:
+  logs_dir: outputs/logs/bg_original/
+  learning_rate: 9.823220049393021e-06
+  batch_size: 16
+  epochs: 5
+  weight_decay: 0.0932122979242344
+
+model:
+  base_model: "usmiva/bert-web-bg"
