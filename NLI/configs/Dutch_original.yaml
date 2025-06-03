@@ -1,0 +1,24 @@
+# configs/Dutch_original.yaml
+
+dataset:
+  name: "SICK-NL"
+  language: "nl"
+  train_path: "data/Dutch/original/NLI_nl_train.csv"
+  val_path: "data/Dutch/original/NLI_nl_val.csv"
+  test_path: "data/Dutch/original/NLI_nl_test.csv"
+  original: True
+  premise_col: "sentence_A"
+  hypothesis_col: "sentence_B"
+  num_labels: 3
+  label_col: "label"
+  classes: [0, 1, 2]
+  cols_to_drop: ["pair_ID", "relatedness_score",
+                          "entailment_AB", "entailment_BA", "sentence_A_original", "sentence_B_original",
+                          "sentence_A_dataset", "sentence_B_dataset", "SemEval_set", "label_seq2seq"]
+
+training:
+  logs_dir: outputs/logs/nl_original/
+
+model:
+  base_model: "GroNLP/bert-base-dutch-cased"
+  

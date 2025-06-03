@@ -1,0 +1,21 @@
+# configs/Chinese_original.yaml
+
+dataset:
+  name: "XNLI-zh"
+  language: "ch"
+  train_path: "data/Chinese/original/NLI_train_ch.csv"
+  val_path: "data/Chinese/original/NLI_val_ch.csv"
+  test_path: "data/Chinese/original/NLI_test_ch.csv"
+  original: True
+  premise_col: "premise"
+  hypothesis_col: "hypothesis"
+  num_labels: 3
+  label_col: "label"
+  classes: [0, 1, 2]
+  cols_to_drop: []
+                  
+training:
+  logs_dir: outputs/logs/ch_original/
+
+model:
+  base_model: "google-bert/bert-base-chinese"
