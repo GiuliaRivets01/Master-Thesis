@@ -1,0 +1,25 @@
+# configs/Italian_original.yaml
+
+dataset:
+  name: "Italian_QA"
+  language: "it"
+  train_path: "data/Italian/original/raw/QA_it_train_original.csv"
+  val_path: "data/Italian/original/raw/QA_it_val_original.csv"
+  test_path: "data/Italian/original/raw/QA_it_test_original.csv"
+  cleaned_train_path: "data/Italian/original/cleaned/QA_it_train_original_start.csv"
+  cleaned_val_path: "data/Italian/original/cleaned/QA_it_val_original_start.csv"
+  cleaned_test_path: "data/Italian/original/cleaned/QA_it_test_original_start.csv"
+  original: True
+
+training_dir:
+  logs_dir: outputs/logs/it_original/
+
+parameters:
+    per_device_train_batch_size: 8
+    per_device_eval_batch_size: 8
+    learning_rate: 8.947123288769545e-06
+    weight_decay: 0.07900570237813966
+    num_train_epochs: 4
+
+model:
+  base_model: "dbmdz/bert-base-italian-cased"

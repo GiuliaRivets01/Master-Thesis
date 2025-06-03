@@ -1,0 +1,25 @@
+# configs/Chinese_original.yaml
+
+dataset:
+  name: "Chinese_QA"
+  language: "ch"
+  train_path: "data/Chinese/original/raw/QA_ch_train_original.csv"
+  val_path: "data/Chinese/original/raw/QA_ch_val_original.csv"
+  test_path: "data/Chinese/original/raw/QA_ch_test_original.csv"
+  cleaned_train_path: "data/Chinese/original/cleaned/QA_ch_train_or_start1.csv"
+  cleaned_val_path: "data/Chinese/original/cleaned/QA_ch_val_or_start1.csv"
+  cleaned_test_path: "data/Chinese/original/cleaned/QA_ch_test_or_start1.csv"
+  original: True
+
+training_dir:
+  logs_dir: outputs/logs/ch_original/
+
+parameters:
+    per_device_train_batch_size: 16
+    per_device_eval_batch_size: 16
+    learning_rate: 5.598366486939894e-06
+    weight_decay: 0.018066966882960382
+    num_train_epochs: 6
+
+model:
+  base_model: "google-bert/bert-base-chinese"

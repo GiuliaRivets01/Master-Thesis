@@ -1,0 +1,28 @@
+# configs/Bulgarian_original.yaml
+
+dataset:
+  name: "Bulgarian_QA"
+  language: "bg"
+  train_path: "data/Bulgarian/original/raw/QA_bg_train_original.csv"
+  val_path: "data/Bulgarian/original/raw/QA_bg_val_original.csv"
+  test_path: "data/Bulgarian/original/raw/QA_bg_test_original.csv"
+  cleaned_train_path: "data/Bulgarian/original/cleaned/QA_bg_train_or_start1.csv"
+  cleaned_val_path: "data/Bulgarian/original/cleaned/QA_bg_val_or_start1.csv"
+  cleaned_test_path: "data/Bulgarian/original/cleaned/QA_bg_test_or_start1.csv"
+  cleaned_train_path_2: "data/Bulgarian/original/cleaned/QA_bg_train_or_start2.csv"
+  cleaned_val_path_2: "data/Bulgarian/original/cleaned/QA_bg_val_or_start2.csv"
+  cleaned_test_path_2: "data/Bulgarian/original/cleaned/QA_bg_test_or_start2.csv"
+  original: True
+
+training_dir:
+  logs_dir: outputs/logs/bg_original/
+
+parameters:
+    per_device_train_batch_size: 32
+    per_device_eval_batch_size: 32
+    learning_rate: 6.071213945500931e-05
+    weight_decay: 0.055227775428202876
+    num_train_epochs: 5
+
+model:
+  base_model: "usmiva/bert-web-bg"
