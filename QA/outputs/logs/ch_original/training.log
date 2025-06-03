@@ -1,0 +1,5 @@
+2025-05-08 19:28:27,289 - INFO - Dataset Chinese_QA | Language: ch | Original: True
+2025-05-08 19:28:30,886 - INFO - Using model google-bert/bert-base-chinese
+2025-05-08 19:29:50,526 - INFO - Training with parameters {'per_device_train_batch_size': 16, 'per_device_eval_batch_size': 16, 'learning_rate': 5.598366486939894e-06, 'weight_decay': 0.018066966882960382, 'num_train_epochs': 6}
+2025-05-08 20:28:40,464 - INFO - Validation results: {'exact_match': 10.0, 'f1': 48.85583394534801}
+2025-05-08 20:30:12,332 - INFO - Test results: {'exact_match': 0.0, 'f1': 46.444764786870046}

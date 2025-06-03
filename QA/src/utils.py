@@ -6,6 +6,8 @@ import evaluate
 from tqdm import tqdm
 import collections
 import numpy as np
+from transformers import Trainer
+    
 
 def setup_logger(output_dir, log_name='training.log'):
     os.makedirs(output_dir, exist_ok=True)
@@ -132,6 +134,4 @@ def compute_metrics(start_logits, end_logits, features, examples):
     {"id": pred["id"], "prediction_text": pred.get("prediction_text", "") or ""}
     for pred in predicted_answers
 ]
-    print("Theoretical answers: ", theoretical_answers)
-    print("Predicted answers: ", predicted_answers)
     return metric.compute(predictions=predicted_answers, references=theoretical_answers)

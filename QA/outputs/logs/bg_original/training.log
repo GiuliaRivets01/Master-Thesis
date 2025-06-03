@@ -1,0 +1,5 @@
+2025-05-08 19:28:27,289 - INFO - Dataset Bulgarian_QA | Language: bg | Original: True
+2025-05-08 19:28:30,886 - INFO - Using model usmiva/bert-web-bg
+2025-05-08 19:29:50,526 - INFO - Training with parameters {'per_device_train_batch_size': 32, 'per_device_eval_batch_size': 32, 'learning_rate': 6.071213945500931e-05, 'weight_decay': 0.055227775428202876, 'num_train_epochs': 5}
+2025-05-08 20:28:40,464 - INFO - Validation results: {'exact_match': 14.61038961038961, 'f1': 31.663256607669805}
+2025-05-08 20:30:12,332 - INFO - Test results: {'exact_match': 16.181229773462782, 'f1': 33.29701520948563}

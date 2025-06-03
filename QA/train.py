@@ -24,9 +24,10 @@ train_path = config['dataset']['cleaned_train_path']
 val_path = config['dataset']['cleaned_val_path']
 test_path = config['dataset']['cleaned_test_path']
 
-train, val, test = DataLoader(train_path, val_path, test_path).main()
+train, val, test = DataLoader(train_path, val_path, test_path, args).main()
 
 model_checkpoint = config['model']['base_model']
+logger.info(f"Using model {model_checkpoint}")
 tokenizer = AutoTokenizer.from_pretrained(model_checkpoint)
 model = AutoModelForQuestionAnswering.from_pretrained(model_checkpoint).to(device)
 
@@ -45,6 +46,7 @@ if args.tuning == "hp":
     logger.info(f"Best hyperparameters: {study.best_params}")
 
 elif args.tuning == "ft":
+    logger.info(f"Training with parameters {config['parameters']}")
     trainer = QA_Trainer(train_dataset, validation_dataset, config, model, tokenizer).main()
     trainer.train()
 

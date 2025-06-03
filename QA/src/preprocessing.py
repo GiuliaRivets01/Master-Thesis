@@ -27,6 +27,9 @@ class QA_Preprocessor():
         elif self.args.language == "bg" or self.args.language == "nl":
             cols_to_drop = ['predicted_start', 'translated_answer', 'predicted_answer']
             cols_to_rename = {'translated_question': 'question', 'translated_context': 'context'}
+        elif self.args.language == "ru":
+            cols_to_drop = ["context", "question", "answer", "translated_answer", "predicted_answer", "predicted_start"]
+            cols_to_rename = {'translated_question': 'question', 'translated_context': 'context'}
 
         train = self.train.drop(columns=cols_to_drop)
         val = self.val.drop(columns=cols_to_drop)
@@ -35,6 +38,33 @@ class QA_Preprocessor():
         train = train.rename(columns=cols_to_rename)
         val = val.rename(columns=cols_to_rename)
         test = test.rename(columns=cols_to_rename)
+
+        dataset_train = Dataset.from_pandas(train)
+        dataset_val = Dataset.from_pandas(val)
+        dataset_test = Dataset.from_pandas(test)
+
+        return dataset_train, dataset_val, dataset_test
+    
+    def adjust_original_dataset(self):
+        self.train['id'] = self.train.index
+        self.val['id'] = self.val.index
+        self.test['id'] = self.test.index
+        self.train['id'] = self.train['id'].astype(str)
+        self.val['id'] = self.val['id'].astype(str)
+        self.test['id'] = self.test['id'].astype(str)
+
+        if self.args.language == "nl":
+            cols_to_drop = ['title', 'is_impossible', 'answer', 'answer_start']
+        else:
+            cols_to_drop = ['answer', 'answer_start']
+
+        train = self.train.drop(columns=cols_to_drop)
+        val = self.val.drop(columns=cols_to_drop)
+        test = self.test.drop(columns=cols_to_drop)
+
+        #train = train.rename(columns=cols_to_rename)
+        #val = val.rename(columns=cols_to_rename)
+        #test = test.rename(columns=cols_to_rename)
 
         dataset_train = Dataset.from_pandas(train)
         dataset_val = Dataset.from_pandas(val)
@@ -127,7 +157,10 @@ class QA_Preprocessor():
         return inputs
     
     def main(self):
-        dataset_train, dataset_val, dataset_test = self.adjust_dataset()
+        if self.args.original == 'tr':
+            dataset_train, dataset_val, dataset_test = self.adjust_dataset()
+        elif self.args.original == 'or':
+            dataset_train, dataset_val, dataset_test = self.adjust_original_dataset()
 
         train_dataset = dataset_train.map(self.preprocess_training_examples,
                                         batched=True,
