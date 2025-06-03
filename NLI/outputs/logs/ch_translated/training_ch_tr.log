@@ -1,0 +1,18 @@
+2025-06-01 09:21:44,158 - INFO - Dataset: XNLI-zh | language: ch | Translated
+2025-06-01 09:21:44,158 - INFO - Model: bert-base-uncased
+2025-06-01 09:30:01,765 - INFO - Dataset: XNLI-zh | language: ch | Translated
+2025-06-01 09:30:01,767 - INFO - Model: bert-base-uncased
+2025-06-01 09:37:01,040 - INFO - Dataset: XNLI-zh | language: ch | Translated
+2025-06-01 09:37:01,042 - INFO - Model: bert-base-uncased
+2025-06-01 09:39:00,229 - INFO - Dataset: XNLI-zh | language: ch | Translated
+2025-06-01 09:39:00,231 - INFO - Model: bert-base-uncased
+2025-06-01 09:41:53,663 - INFO - Dataset: XNLI-zh | language: ch | Translated
+2025-06-01 09:41:53,665 - INFO - Model: bert-base-uncased
+2025-06-01 09:47:18,175 - INFO - Dataset: XNLI-zh | language: ch | Translated
+2025-06-01 09:47:18,176 - INFO - Model: bert-base-uncased
+2025-06-01 09:49:58,452 - INFO - Dataset: XNLI-zh | language: ch | Translated
+2025-06-01 09:49:58,452 - INFO - Model: bert-base-uncased
+2025-06-01 09:50:39,915 - INFO - No checkpoint found, starting from scratch.
+2025-06-01 09:50:39,915 - INFO - Loss not computed.
+2025-06-01 12:11:35,258 - INFO - Validation results: {'eval_loss': 0.6442187428474426, 'eval_accuracy': 0.7373563218390805, 'eval_macro_f1': 0.7366479607815725, 'eval_weighted_f1': 0.736680374825688, 'eval_micro_f1': 0.7373563218390805, 'eval_macro_precision': 0.7367348814063727, 'eval_macro_recall': 0.7373058050778801, 'eval_weighted_precision': 0.7367488312565371, 'eval_weighted_recall': 0.7373563218390805, 'eval_micro_precision': 0.7373563218390805, 'eval_micro_recall': 0.7373563218390805, 'eval_runtime': 74.034, 'eval_samples_per_second': 540.563, 'eval_steps_per_second': 33.795, 'epoch': 5.0}
+2025-06-01 12:12:49,284 - INFO - Test results: {'eval_loss': 0.6387210488319397, 'eval_accuracy': 0.7389870318083006, 'eval_macro_f1': 0.7382265305570707, 'eval_weighted_f1': 0.7382839380519006, 'eval_micro_f1': 0.7389870318083006, 'eval_macro_precision': 0.738424409317346, 'eval_macro_recall': 0.7389160641000645, 'eval_weighted_precision': 0.7384678620058198, 'eval_weighted_recall': 0.7389870318083006, 'eval_micro_precision': 0.7389870318083006, 'eval_micro_recall': 0.7389870318083006, 'eval_runtime': 74.0233, 'eval_samples_per_second': 540.654, 'eval_steps_per_second': 33.8, 'epoch': 5.0}

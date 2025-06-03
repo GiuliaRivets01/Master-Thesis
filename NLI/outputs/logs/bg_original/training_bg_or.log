@@ -1,0 +1,20 @@
+2025-05-22 12:45:06,169 - INFO - Dataset: XNLI-bg | language: bg | Original
+2025-05-22 12:45:06,169 - INFO - Model: AIaLT-IICT/bert_bg_lit_web_base_uncased
+2025-05-22 12:45:45,241 - INFO - Loss not computed.
+2025-05-22 14:57:54,555 - INFO - Dataset: XNLI-bg | language: bg | Original
+2025-05-22 14:57:54,557 - INFO - Model: AIaLT-IICT/bert_bg_lit_web_base_uncased
+2025-05-22 14:58:35,090 - INFO - Loss not computed.
+2025-05-22 15:16:06,458 - INFO - Dataset: XNLI-bg | language: bg | Original
+2025-05-22 15:16:06,460 - INFO - Model: AIaLT-IICT/bert_bg_lit_web_base_uncased
+2025-05-22 15:16:46,193 - INFO - Resuming training from checkpoint: ./results/checkpoint-40022
+2025-05-22 15:16:46,194 - INFO - Loss not computed.
+2025-05-22 18:21:16,411 - INFO - Dataset: XNLI-bg | language: bg | Original
+2025-05-22 18:21:16,413 - INFO - Model: AIaLT-IICT/bert_bg_lit_web_base_uncased
+2025-05-22 18:21:57,389 - INFO - Resuming training from checkpoint: ./results/checkpoint-100055
+2025-05-22 18:21:57,389 - INFO - Loss not computed.
+2025-05-22 20:10:22,417 - INFO - Dataset: XNLI-bg | language: bg | Original
+2025-05-22 20:10:22,420 - INFO - Model: AIaLT-IICT/bert_bg_lit_web_base_uncased
+2025-05-22 20:11:01,569 - INFO - Resuming training from checkpoint: ./results/checkpoint-80044
+2025-05-22 20:11:01,569 - INFO - Loss not computed.
+2025-05-22 20:43:23,456 - INFO - Validation results: {'eval_loss': 0.5438136458396912, 'eval_accuracy': 0.7828585707146427, 'eval_macro_f1': 0.7828844868311009, 'eval_weighted_f1': 0.78290976523279, 'eval_micro_f1': 0.7828585707146427, 'eval_macro_precision': 0.7844326411735194, 'eval_macro_recall': 0.7828497120263718, 'eval_weighted_precision': 0.7844755435790364, 'eval_weighted_recall': 0.7828585707146427, 'eval_micro_precision': 0.7828585707146427, 'eval_micro_recall': 0.7828585707146427, 'eval_runtime': 74.1297, 'eval_samples_per_second': 539.864, 'eval_steps_per_second': 33.752, 'epoch': 5.0}
+2025-05-22 20:44:37,527 - INFO - Test results: {'eval_loss': 0.541755199432373, 'eval_accuracy': 0.7847130256615277, 'eval_macro_f1': 0.7847832390478193, 'eval_weighted_f1': 0.7848031625472635, 'eval_micro_f1': 0.7847130256615277, 'eval_macro_precision': 0.7867551080396074, 'eval_macro_recall': 0.78494203753784, 'eval_weighted_precision': 0.787028805045097, 'eval_weighted_recall': 0.7847130256615277, 'eval_micro_precision': 0.7847130256615277, 'eval_micro_recall': 0.7847130256615277, 'eval_runtime': 74.0671, 'eval_samples_per_second': 540.335, 'eval_steps_per_second': 33.78, 'epoch': 5.0}
