@@ -6,5 +6,5 @@
 2025-05-21 18:39:15,253 - INFO - Cleaning original dataset...
 2025-05-21 18:39:52,226 - INFO - Fine-tuning BERT...
 2025-05-21 18:39:52,392 - INFO - No checkpoint found, starting from scratch.
-2025-05-21 20:12:38,113 - INFO - Validation metrics: {'eval_loss': 0.5192827582359314, 'eval_accuracy': 0.7721111111111111, 'eval_precision': 0.7835314286635854, 'eval_recall': 0.7716037897315369, 'eval_f1': 0.7749280300726245, 'eval_runtime': 32.6571, 'eval_samples_per_second': 275.591, 'eval_steps_per_second': 17.24, 'epoch': 5.0}
-2025-05-21 20:13:20,565 - INFO - Test metrics: {'eval_loss': 0.5210930705070496, 'eval_accuracy': 0.7718888888888888, 'eval_precision': 0.7832716326955248, 'eval_recall': 0.7714556974844783, 'eval_f1': 0.7748940697807329, 'eval_runtime': 42.4513, 'eval_samples_per_second': 212.008, 'eval_steps_per_second': 13.262, 'epoch': 5.0}
+2025-05-21 20:12:38,113 - INFO - Validation metrics: {'eval_loss': 0.5051690936088562, 'eval_accuracy': 0.7775555555555556, 'eval_precision': 0.7914649101455661, 'eval_recall': 0.7771588632374629, 'eval_f1': 0.7805144702354699, 'eval_runtime': 34.5156, 'eval_samples_per_second': 260.752, 'eval_steps_per_second': 16.311, 'epoch': 5.0}
+2025-05-21 20:13:20,565 - INFO - Test metrics: {'eval_loss': 0.5111538171768188, 'eval_accuracy': 0.7808888888888889, 'eval_precision': 0.7924720360294094, 'eval_recall': 0.7805066325673092, 'eval_f1': 0.7835149289968859, 'eval_runtime': 42.615, 'eval_samples_per_second': 211.193, 'eval_steps_per_second': 13.211, 'epoch': 5.0}
