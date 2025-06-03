@@ -17,7 +17,7 @@ dataset:
 
 training:
   batch_size: 16
-  learning_rate:  4.3226614224696694e-05
-  weight_decay:  0.03743622632199079
+  learning_rate:  3.4398327123954815e-06
+  weight_decay:  0.07742751137358556
   epochs: 4
   logs_dir: outputs/logs/ru_translated/

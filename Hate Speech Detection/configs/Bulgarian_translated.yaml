@@ -16,7 +16,3 @@ dataset:
 
 training:
   logs_dir: outputs/logs/bg_translated/
-  learning_rate: 2.0723800931714852e-05
-  batch_size: 32
-  epochs: 5
-  weight_decay: 0.09884811726792192

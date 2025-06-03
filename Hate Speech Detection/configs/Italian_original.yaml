@@ -18,8 +18,8 @@ model:
   base_model: "dbmdz/bert-base-italian-uncased"
 
 training:
-  batch_size: 32
-  learning_rate: 2.045061172504002e-05
-  weight_decay:   0.05672366038527255
-  epochs: 3
+  batch_size: 16
+  learning_rate:  2.6714925151178636e-05
+  weight_decay:  0.07536260688516336
+  epochs: 5
   logs_dir: outputs/logs/it_original/
