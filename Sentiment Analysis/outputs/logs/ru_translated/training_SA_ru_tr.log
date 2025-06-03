@@ -1,0 +1,15 @@
+2025-05-19 21:34:08,487 - INFO - Using device cuda
+2025-05-19 21:34:08,487 - INFO - Dataset RuReviews | Language: ru | Original: False
+2025-05-19 21:34:09,055 - INFO - Nan values found in train set: 1
+2025-05-19 21:34:09,057 - INFO - Nan values found in validation set: 2
+2025-05-19 21:34:09,059 - INFO - Nan values found in test set: 0
+2025-05-21 08:55:05,645 - INFO - Using device cuda
+2025-05-21 08:55:05,646 - INFO - Dataset RuReviews | Language: ru | Original: False
+2025-05-21 08:55:06,263 - INFO - Nan values found in train set: 1
+2025-05-21 08:55:06,266 - INFO - Nan values found in validation set: 2
+2025-05-21 08:55:06,268 - INFO - Nan values found in test set: 0
+2025-05-21 08:55:06,477 - INFO - Cleaning translated dataset...
+2025-05-21 08:55:52,688 - INFO - Fine-tuning BERT...
+2025-05-21 08:55:52,898 - INFO - No checkpoint found, starting from scratch.
+2025-05-21 11:29:47,876 - INFO - Validation metrics: {'eval_loss': 0.5796356797218323, 'eval_accuracy': 0.7438319626583685, 'eval_precision': 0.7638689432138971, 'eval_recall': 0.7434250776067617, 'eval_f1': 0.74578739777983, 'eval_runtime': 48.4867, 'eval_samples_per_second': 185.577, 'eval_steps_per_second': 11.611, 'epoch': 5.0}
+2025-05-21 11:30:43,885 - INFO - Test metrics: {'eval_loss': 0.5772854089736938, 'eval_accuracy': 0.7416666666666667, 'eval_precision': 0.7620596575192805, 'eval_recall': 0.7414058515977691, 'eval_f1': 0.7438666634161404, 'eval_runtime': 56.0084, 'eval_samples_per_second': 160.69, 'eval_steps_per_second': 10.052, 'epoch': 5.0}

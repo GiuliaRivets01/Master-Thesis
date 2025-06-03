@@ -1,0 +1,12 @@
+2025-05-21 15:30:01,305 - INFO - Using device cuda
+2025-05-21 15:30:01,307 - INFO - Dataset Cinexio | Language: bg | Original: True
+2025-05-21 15:30:01,370 - INFO - Nan values found in train set: 0
+2025-05-21 15:30:01,371 - INFO - Nan values found in validation set: 0
+2025-05-21 15:30:01,372 - INFO - Nan values found in test set: 0
+2025-05-21 15:31:44,234 - INFO - Cleaning original dataset...
+2025-05-21 15:31:49,422 - INFO - Fine-tuning BERT...
+2025-05-21 15:31:49,503 - INFO - No checkpoint found, starting from scratch.
+
+2025-05-21 15:34:34,356 - INFO - Validation metrics: {'eval_loss': 0.7443714737892151, 'eval_accuracy': 0.8016276703967447, 'eval_precision': 0.7114792096197928, 'eval_recall': 0.6876212206400886, 'eval_f1': 0.6902462220796197, 'eval_runtime': 0.6447, 'eval_samples_per_second': 1524.692, 'eval_steps_per_second': 96.166, 'epoch': 5.0}
+
+2025-05-21 15:34:34,999 - INFO - Test metrics: {'eval_loss': 0.7604542970657349, 'eval_accuracy': 0.7945066124109867, 'eval_precision': 0.6962864971148331, 'eval_recall': 0.6632294523852665, 'eval_f1': 0.6655669765704098, 'eval_runtime': 0.6419, 'eval_samples_per_second': 1531.409, 'eval_steps_per_second': 96.589, 'epoch': 5.0}

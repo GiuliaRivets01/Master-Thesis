@@ -1,0 +1,10 @@
+2025-05-21 15:41:09,446 - INFO - Using device cuda
+2025-05-21 15:41:09,446 - INFO - Dataset DBRD | Language: nl | Original: True
+2025-05-21 15:41:10,114 - INFO - Nan values found in train set: 0
+2025-05-21 15:41:10,116 - INFO - Nan values found in validation set: 0
+2025-05-21 15:41:10,117 - INFO - Nan values found in test set: 0
+2025-05-21 15:41:10,284 - INFO - Cleaning original dataset...
+2025-05-21 15:41:43,114 - INFO - Fine-tuning BERT...
+2025-05-21 15:41:43,238 - INFO - No checkpoint found, starting from scratch.
+2025-05-21 16:13:15,230 - INFO - Validation metrics: {'eval_loss': 0.21646972000598907, 'eval_accuracy': 0.9315192743764172, 'eval_precision': 0.9314881577258621, 'eval_recall': 0.9315989446691969, 'eval_f1': 0.9315111605613882, 'eval_runtime': 13.8091, 'eval_samples_per_second': 159.678, 'eval_steps_per_second': 9.993, 'epoch': 5.0}
+2025-05-21 16:13:29,044 - INFO - Test metrics: {'eval_loss': 0.23056240379810333, 'eval_accuracy': 0.9292517006802721, 'eval_precision': 0.9294662825518365, 'eval_recall': 0.9290144747630071, 'eval_f1': 0.9291782719481885, 'eval_runtime': 13.8134, 'eval_samples_per_second': 159.627, 'eval_steps_per_second': 9.99, 'epoch': 5.0}

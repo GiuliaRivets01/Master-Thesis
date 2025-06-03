@@ -1,0 +1,11 @@
+2025-05-20 23:34:20,599 - INFO - Using device cuda
+2025-05-20 23:34:20,599 - INFO - Dataset Italian-Tweets-Dataset | Language: it | Original: False
+2025-05-20 23:34:21,066 - INFO - Nan values found in train set: 2135
+2025-05-20 23:34:21,070 - INFO - Nan values found in validation set: 250
+2025-05-20 23:34:21,074 - INFO - Nan values found in test set: 280
+2025-05-20 23:34:21,494 - INFO - Cleaning translated dataset...
+2025-05-20 23:35:39,436 - INFO - Fine-tuning BERT...
+2025-05-20 23:35:39,732 - INFO - No checkpoint found, starting from scratch.
+
+2025-05-21 05:18:09,658 - INFO - Validation metrics: {'eval_loss': 0.6589875221252441, 'eval_accuracy': 0.7424075434729366, 'eval_precision': 0.4624813985442997, 'eval_recall': 0.7009231031813943, 'eval_f1': 0.516090392238001, 'eval_runtime': 94.7676, 'eval_samples_per_second': 172.337, 'eval_steps_per_second': 10.774, 'epoch': 5.0}
+2025-05-21 05:19:51,249 - INFO - Test metrics: {'eval_loss': 0.7658429741859436, 'eval_accuracy': 0.8341307814992025, 'eval_precision': 0.5745213801731481, 'eval_recall': 0.5861436365202474, 'eval_f1': 0.5602893773570155, 'eval_runtime': 101.59, 'eval_samples_per_second': 160.469, 'eval_steps_per_second': 10.031, 'epoch': 5.0}

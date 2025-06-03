@@ -1,0 +1,10 @@
+2025-05-21 20:20:50,313 - INFO - Using device cuda
+2025-05-21 20:20:50,313 - INFO - Dataset Weibo-Senti-100k | Language: ch | Original: True
+2025-05-21 20:20:50,968 - INFO - Nan values found in train set: 0
+2025-05-21 20:20:50,970 - INFO - Nan values found in validation set: 0
+2025-05-21 20:20:50,972 - INFO - Nan values found in test set: 0
+2025-05-21 20:20:51,144 - INFO - Cleaning original dataset...
+2025-05-21 20:21:29,961 - INFO - Fine-tuning BERT...
+2025-05-21 20:21:30,099 - INFO - No checkpoint found, starting from scratch.
+2025-05-21 21:58:12,857 - INFO - Validation metrics: {'eval_loss': 0.040267281234264374, 'eval_accuracy': 0.98174847903992, 'eval_precision': 0.9822720607116202, 'eval_recall': 0.9818382538638688, 'eval_f1': 0.9817455497265887, 'eval_runtime': 29.4558, 'eval_samples_per_second': 407.357, 'eval_steps_per_second': 25.462, 'epoch': 5.0}
+2025-05-21 21:58:42,014 - INFO - Test metrics: {'eval_loss': 0.037269797176122665, 'eval_accuracy': 0.9842486873906159, 'eval_precision': 0.9846020448432409, 'eval_recall': 0.9843208412272009, 'eval_f1': 0.9842471639249828, 'eval_runtime': 29.1557, 'eval_samples_per_second': 411.549, 'eval_steps_per_second': 25.724, 'epoch': 5.0}
