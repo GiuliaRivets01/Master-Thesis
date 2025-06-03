@@ -1,0 +1,20 @@
+# configs/Chinese_translated.yaml
+
+dataset:
+  name: "Weibo-Senti-100k"
+  language: "ch"
+  train_path: "data/Chinese/weibo_ch_train_translated.csv"
+  val_path: "data/Chinese/weibo_ch_val.csv_translated.csv"
+  test_path: "data/Chinese/weibo_ch_test_translated.csv"
+  text_col: "translated_text"
+  label_col: "label"
+  cols_to_drop: ["review"]
+  classes: False
+  original: False
+
+training:
+  logs_dir: outputs/logs/ch_translated/
+  learning_rate: 3.999202601043564e-05
+  batch_size: 32
+  epochs: 6
+  weight_decay: 0.0655420642368641

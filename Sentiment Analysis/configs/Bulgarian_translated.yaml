@@ -1,0 +1,20 @@
+# configs/Bulgarian_translated.yaml
+
+dataset:
+  name: "Cinexio"
+  language: "bg"
+  train_path: "data/Bulgarian/cinexio_bg_train_final_translated.csv"
+  val_path: "data/Bulgarian/cinexio_bg_val_final_translated.csv"
+  test_path: "data/Bulgarian/cinexio_bg_test_final_translated.csv"
+  text_col: "translated_text"
+  label_col: "Category"
+  cols_to_drop: ["ID", "Cinexio_URL", "Comment", "User_Rating", "Date"]
+  classes: [0, 1, 2]
+  original: False
+
+training:
+  logs_dir: outputs/logs/bg_translated/
+  learning_rate: 2.99811739497598e-05
+  batch_size: 16
+  epochs: 3
+  weight_decay: 0.09334803492754339

@@ -1,0 +1,16 @@
+# configs/Russian_translated.yaml
+
+dataset:
+  name: "RuReviews"
+  language: "ru"
+  train_path: "data/Russian/rureviews_ru_train_translated.csv"
+  val_path: "data/Russian/rureviews_val_translated.csv"
+  test_path: "data/Russian/rureviews_test_translated.csv"
+  text_col: "translated_text"
+  label_col: "sentiment"
+  cols_to_drop: ["review"]
+  original: False
+  classes: False
+
+training:
+  logs_dir: outputs/logs/ru_translated/

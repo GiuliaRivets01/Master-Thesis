@@ -1,0 +1,19 @@
+# configs/Italian_original.yaml
+
+dataset:
+  name: "Italian-Tweets-Dataset"
+  language: "it"
+  train_path: "data/Italian/SA_it_train_original.csv"
+  val_path: "data/Italian/SA_it_val_original.csv"
+  test_path: "data/Italian/SA_it_test_original.csv"
+  text_col: "tweet_text"
+  label_col: "sentiment"
+  cols_to_drop: []
+  classes: [0, 1, 2, 3]
+  original: True
+
+training:
+  logs_dir: "outputs/logs/it_original/"
+
+model:
+  base_model: "dbmdz/bert-base-italian-uncased"

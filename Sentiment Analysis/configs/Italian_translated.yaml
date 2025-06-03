@@ -1,0 +1,16 @@
+# configs/Italian_translated.yaml
+
+dataset:
+  name: "Italian-Tweets-Dataset"
+  language: "it"
+  train_path: "data/Italian/ita_tweets_train_final.csv"
+  val_path: "data/Italian/ita_tweets_it_val_translated.csv"
+  test_path: "data/Italian/ita_tweets_it_test_translated.csv"
+  text_col: "translated_text"
+  label_col: "sentiment"
+  classes: [0, 1, 2, 3]
+  cols_to_drop: []
+  original: False
+
+training:
+  logs_dir: outputs/logs/it_translated/

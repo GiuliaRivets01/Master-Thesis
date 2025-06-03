@@ -1,0 +1,19 @@
+# configs/Dutch_original.yaml
+
+dataset:
+  name: "DBRD"
+  language: "nl"
+  train_path: "data/Dutch/DBRD_nl_train_translated.csv"
+  val_path: "data/Dutch/DBRD_nl_val_translated.csv"
+  test_path: "data/Dutch/DBRD_nl_test_translated.csv"
+  text_col: "text"
+  label_col: "label"
+  cols_to_drop: ["translated_text"] 
+  original: True
+  classes: False
+
+training:
+  logs_dir: outputs/logs/nl_original/
+
+model:
+  base_model: "GroNLP/bert-base-dutch-cased"
