@@ -32,7 +32,7 @@ def plot_labels(datasets, save_path):
 
     # Plot
     plt.figure(figsize=(12, 6))
-    sns.barplot(data=plot_df, x='Dataset', y='Proportion', hue='Label')
+    sns.barplot(data=plot_df, x='Dataset', y='Proportion', hue='Label', palette='Paired')
     plt.title('Label Proportions Across Datasets')
     plt.xticks(rotation=45)
     plt.ylim(0, 1.05)
@@ -92,11 +92,11 @@ df_ch = load_dataset_splits(config_ch)
 
 
 datasets = {
-    'Bulgarian': df_bg,
-    'Dutch': df_nl,
-    'Chinese': df_ch,
-    'Italian': df_it,
-    'Russian': df_ru
+    'HS-bg': df_bg,
+    'Dutch HateCheck': df_nl,
+    'COLD': df_ch,
+    'HS-it': df_it,
+    'South Park': df_ru
 }
 
 # Define the directory and filename
